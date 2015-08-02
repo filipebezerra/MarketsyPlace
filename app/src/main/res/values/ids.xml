@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="listing_image" type="id" />
+    <item name="listing_title" type="id" />
+    <item name="listing_shop_name" type="id" />
+    <item name="listing_shop_price" type="id" />
+    <item name="progress_bar" type="id" />
+    <item name="active_listings_list" type="id" />
+    <item name="error_view" type="id" />
+    <item name="listing_share_button" type="id" />
+    <item name="listing_plus_button" type="id" />
+</resources>

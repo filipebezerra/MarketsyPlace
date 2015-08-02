@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/highlight_selector"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@id/listing_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:scaleType="centerCrop"
+                />
+
+            <com.google.android.gms.plus.PlusOneButton
+                xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+                android:id="@id/listing_plus_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignTop="@id/listing_share_button"
+                android:layout_toLeftOf="@id/listing_share_button"
+                android:layout_toStartOf="@id/listing_share_button"
+                plus:size="standard"
+                plus:annotation="none"
+                />
+
+            <ImageButton
+                android:id="@id/listing_share_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_share_red"
+                />
+        </RelativeLayout>
+
+        <!--TODO: use cards -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="@android:color/white"
+            >
+
+            <TextView
+                android:id="@id/listing_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                tools:text="Sample Title"
+                />
+
+            <TextView
+                android:id="@id/listing_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listing_title"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/darker_gray"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="Sample Shop Name"
+                />
+
+            <TextView
+                android:id="@id/listing_shop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listing_title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/holo_green_dark"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="$ 39.44"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
